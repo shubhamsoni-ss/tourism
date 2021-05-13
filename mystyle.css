@@ -1,0 +1,327 @@
+
+{
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+h1{
+font-size: 30px; 
+       color: #24241d; 
+       text-transform: uppercase;
+       text-align: center; 
+       margin: 0 0 35px 0; 
+       text-shadow: 0px 1px 0px #f2f2f2;
+ }
+/* Background Homepage ka */
+
+body {
+background-image: url("https://i.imgur.com/Q7YHxBP.jpg");
+    background-color: #fff;
+
+}
+
+/* Ye Footer hai, bottom patti */
+
+footer{ 
+  position:relative; 
+  bottom:0; 
+  width:100%; 
+  height:100px; 
+}
+footer{ background-image: url("https://i.imgur.com/1u7V3B8.png"); }
+* {
+  font-family: 'Vollkorn', Arial, serif;
+  font-size: 1em; 
+}
+
+/* Ye Footer me follow wala */
+.icon-bar {
+    width: 40%;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    color: #feffed;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #3a3333;
+}
+
+/* Ye Menu aur logo hai, upar wala */
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: -115px; 
+}
+
+.main-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -115px; 
+  overflow: visible;
+  
+  max-width: 900px;  }
+
+.main-menu a {
+    width: 100%;
+    text-align: center;
+    padding: .75em 1em;
+    display: block;
+    color: #222;
+    border-bottom: 1px solid #ddd; 
+}
+
+.main-menu a:hover {
+      color: #c14400;
+      border-bottom-color: #c14400; 
+}
+/* Ye Dropdown Settings ke liye hai */
+
+.drop-menu {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 100%;
+  transition: max-height .4s, opacity .3s;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden; 
+  }
+
+
+.drop-menu > .menu-button {
+  height: 100%;
+  transition: transform .4s;
+  transform: translateY(-300%);
+  background: #FFFFFF;
+}
+
+.dropdown-wrapper:hover > .menu-button {
+  color: #c14400;
+  background: #FFFFFF; 
+}
+
+.dropdown-wrapper:hover .drop-menu{
+  max-height: 300px;  
+  opacity: 1;
+}
+
+.dropdown-wrapper:hover > .drop-menu .menu-button {
+  transform: translateY(10%); 
+}
+
+@media (min-width: 550px) {
+  
+  .effect {
+        transition: max-height 0s;
+        opacity: 1;
+        background: transparent;
+      }
+      .effect .menu-button {
+        transform: translateY(0%); 
+      }
+
+
+      .scissor .menu-button{
+        transform: translateX(-100%);
+      }
+    
+      .scissor .menu-button:nth-child(2n+1) {
+        transform: translateX(100%);
+      }
+      .dropdown-wrapper:hover .scissor .menu-button {
+        transform: translateX(0%);
+      }
+
+
+      .fade-in .menu-button {
+        transition: opacity .5s;
+        opacity: 0;
+      }
+      .dropdown-wrapper:hover .fade-in .menu-button {
+        opacity: 1;
+      }
+      
+
+
+  .header-container {
+    width: 90%;
+  }
+
+  .header-container {
+    height: 100px;
+    justify-content: space-between;  } 
+  
+  .main-menu {   
+    flex-direction: row; 
+    align-items: flex-start;
+    height: 48px;
+    margin: 140;
+  }
+    
+  .main-menu > .menu-button {
+    width: 15%;
+    max-width: 120px;
+  }
+
+  .logo {
+    max-width: 190px;
+    max-height: 130px;
+    margin-top: 5px; 
+  }
+
+}
+
+@media (min-width: 850px) {
+
+  .header-container {
+    flex-direction: row; 
+    justify-content: space-around; 
+    height: 160px;
+	} 
+
+  .main-menu {
+ 		width: 60%;
+  	justify-content: space-between;
+  }
+
+  .logo {
+    margin: -30;
+  }
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Gallary Hai ye */
+.container1{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+img{
+  width:500px;
+  height:350px;
+  margin: 10px;
+  transition:all .8s;
+}
+
+
+img:hover{
+  transform:scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner Starts Here */
+header {
+  background-position: 30px 20px, 50% 50%;
+  background-image: url(../img/it-logo.svg), url(../img/hero-bg.jpg);
+  padding-bottom: 50px; }
+  header .logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 10px 0 0 30px; }
+    header .logo path {
+      fill: rgba(0, 0, 0, 0.4); }
+  header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: #24241d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 30px; }
+    header h1 span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: #24241d solid 10px; }
+  header .kicker {
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #24241d;
+    line-height: 1; }
+
+@media (max-width: 640px) {
+  header {
+    background-position: 20% 20px, 50% 50%; }
+    header nav {
+      float: none;
+      text-align: center;
+      padding-top: 60px; }
+    header h1 {
+      padding-top: 0px; } }
+	  
+	  
+	  
+	  /* Contact Form */
+	  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #24241d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container-contact {
+    padding: 20px;
+    width: 50%
+}

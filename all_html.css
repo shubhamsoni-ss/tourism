@@ -1,0 +1,133 @@
+.container
+{
+	position:relative;
+	color:black;
+}
+.top-left
+{
+	position:absolute;
+	top:100px;
+	left:16px;
+	width:500px;
+	height:950px;
+	color:brown;
+	font-size:20px;
+	text-align:center;
+	background-color:black;
+	border:3px solid black;
+	border-color:#cccccc:
+}
+.top-right
+{
+	position:absolute;
+	right:16px;
+	top:100px;
+	border:3px solid black;
+	width:810px;
+	height:950px;
+	background-color:black;
+}
+.top-center
+{
+	position:absolute;
+	left:400px;
+	top:8px;
+	color:black;
+	width:609px;
+	border:3px solid black;
+	border-style:dotted;
+}
+.bottom-center
+{
+	position:absolute;
+	left:500px;
+	top:8px;
+	color:black;
+	width:623px;
+	border:3px solid black;
+	border-style:dotted;
+}
+.bottom-left
+{
+	position:absolute;
+	bottom:8px;
+	left:16px;
+}
+.bottom-right
+{
+	position:absolute;
+	bottom:8px;
+	right:16px;
+}
+.centered
+{
+	position:absolute;
+	left:50%;
+	right:50%;
+	transform:tranlsate(-50%,-50%);
+	top:1000px:
+	width:1600px;
+	color:black;
+	border:3px solid black;
+}
+.btn-grp button
+{
+	background-color:DCDCDC;
+	color:brown;
+	padding:15px 20px;
+	float:left;
+	cursor:pointer;
+	border-right:none;
+	font-family:lucida fax;
+	font-size:20px;
+}
+.btn-grp button:hover
+{
+	background-color:black;
+	color:white;
+}
+header
+{
+	background_color:white;
+	color:black;
+	width:40px;
+	height:30px;
+}
+pre
+{
+	font-family:verdana;
+	font-size:20px;
+	color:black;
+	border:5px brown;
+	border-style:dotted;
+	background-color:white;
+}
+.bottomm
+{
+	background-color:black;
+	color:white;
+	font-family:Script MT;
+	bottom:0px;
+	left:8px;
+	width:100px;
+	
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: yellow;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
